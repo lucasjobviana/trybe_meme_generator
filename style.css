@@ -34,3 +34,24 @@ main {
     color: #FFFFFF;
     text-shadow: 5px 5px 5px #000000;
 }
+
+#tools {
+    display: flex;
+    flex-direction: column;
+}
+
+button {
+    display: inline-block;
+}
+
+#fire {
+    background-color: rgb(255, 0, 0);
+}
+
+#water {
+    background-color: rgb(0, 0, 255);
+}
+
+#earth {
+    background-color: rgb(0, 128, 0);
+}
