@@ -15,10 +15,10 @@ window.onload = () =>{
     const botao = evt.target;
     
     switch(botao.value){
-      case 'up': alert('up');break;
-      case 'right': break;
-      case 'down': break;
-      case 'left': alert('down');break;
+      case 'up': conteiner.style.justifyContent = 'flex-start'; break;
+      case 'right': conteiner.style.alignItems = 'flex-end'; break;
+      case 'down': conteiner.style.justifyContent = 'flex-end'; break;
+      case 'left': conteiner.style.alignItems = 'flex-start';break;
     }
   });
 }
