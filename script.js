@@ -3,10 +3,25 @@ const iptFrase = document.getElementById('text-input');
 const iptMemeImage = document.getElementById('meme-insert');
 const imgImage = document.getElementById('meme-image');
 const conteiner = document.getElementById('meme-image-container');
+const toolsText = document.getElementById('tools_text');
 
 iptFrase.addEventListener('keyup', () => {
   spnFrase.textContent = iptFrase.value;
 });
+
+window.onload = () =>{
+
+  toolsText.addEventListener('click',(evt)=>{
+    const botao = evt.target;
+    
+    switch(botao.value){
+      case 'up': alert('up');break;
+      case 'right': break;
+      case 'down': break;
+      case 'left': alert('down');break;
+    }
+  });
+}
 
 
 iptMemeImage.addEventListener('change',(evt)=>{
