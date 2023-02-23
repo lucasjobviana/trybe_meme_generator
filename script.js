@@ -10,22 +10,24 @@ iptFrase.addEventListener('keyup', () => {
 
 
 iptMemeImage.addEventListener('change',(evt)=>{
+   // Algoritmo desenvolvido com base na aprendizagem adquirida a partir dessas fontes:
+  // https://developer.mozilla.org/en-US/docs/Web/API/FileReader
+  // https://www.youtube.com/watch?v=gXXmQeZOHKY
   const input = evt.target;
   const file = input.files[0];
   console.log (input);
-  console.log(file)
+  console.log(file);
 
-    alert('tem arquivo');
-    const reader = new FileReader();
-    reader.readAsDataURL(file);
-    
-    console.log('vou definir o event load')
-    console.log(reader);
-    reader.addEventListener('load',(evt)=>{
-      console.log('fdsfadfd')
-      const readerTarget = evt.target;
-      imgImage.setAttribute('src',readerTarget.result)
-    });
+  const reader = new FileReader();
+  reader.readAsDataURL(file);
+
+  console.log('vou definir o event load')
+  console.log(reader);
+  reader.addEventListener('load',(evt)=>{
+    console.log('fdsfadfd')
+    const readerTarget = evt.target;
+    imgImage.setAttribute('src',readerTarget.result)
+  });
 
 });
 
