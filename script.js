@@ -22,7 +22,7 @@ window.onload = () => {
       case 'fire': conteiner.style.border = '3px dashed rgb(255, 0, 0)'; break;
       case 'water': conteiner.style.border = '5px double rgb(0, 0, 255)'; break;
       case 'earth': conteiner.style.border = '6px groove rgb(0, 128, 0)'; break;
-      case '1': alert('1'); break;
+      case '1': console.log('1'); break;
       case '2': conteiner.style.border = '6px groove rgb(0, 128, 0)'; break;
       case '3': conteiner.style.border = '6px groove rgb(0, 128, 0)'; break;
       case '4': conteiner.style.border = '6px groove rgb(0, 128, 0)'; break;
